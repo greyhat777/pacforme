@@ -1,0 +1,62 @@
+
+
+<div id="other">
+	<img id="redx" style="float:right" src="images/redx.png"/>
+	<img id="pic1" ng-src="images/{{athletes[whichItem].image}}.jpg" alt="Photo of {{athlete[whichItem].name}}">
+
+</div>
+
+
+<section class="athleteinfo1">
+	<div class="athlete" ng-model="athletes">
+	
+		<a href="#/models/{{nextItem}}"><button type="button" class="btn btn-primary middle">Next ></button></a>
+	    <a href="#/models/{{nextItem}}"><button type="button" class="btn btn-primary midle">Previous <</button></a>
+
+		<h1>{{athletes[whichItem].name}}</h1>
+		<div class="info">
+			<h3>{{athletes[whichItem].fullname}}</h3>
+			<img id="pic1"  class="detailsimg" ng-src="images/{{athletes[whichItem].image}}.jpg" alt="Photo of {{athlete[whichItem].name}}">
+			<h3>Stats:</h3>
+			  			<div class="team">City: &nbsp;..... {{athletes[whichItem].city}}</div>
+			  			<div class="team">Full Name: &nbsp;.....  {{athletes[whichItem].fullname}}</div>
+			  			<div class="team">DOB: &nbsp;.....  {{athletes[whichItem].dob}}</div>
+			  			<div class="team">Team Name: &nbsp;.....  {{athletes[whichItem].team}}</div>
+			  			<div class="team">Position: &nbsp;.....  {{athletes[whichItem].position}}</div>
+			  			<div class="team">Biography: &nbsp;.....  {{athletes[whichItem].biography}}</div>
+		</div>
+	</div>
+	<br/>
+	<a href="#/list"><button type="button" class="btn btn-primary middle">Back to search</button></a>
+	<br/>
+	<br/>
+	<br/>
+</section>
+
+
+<div class="athleteinfo2">
+	<h3>Biography</h3>
+	<div>{{athletes[whichItem].paragraph1}}</div>
+	<div>{{athletes[whichItem].paragraph2}}</div>
+	<div>{{athletes[whichItem].paragraph3}}</div>
+</div>
+
+
+
+
+<img class="detailsimg bannerad" ng-src="images/{{athletes[whichItem].imagerotator}}.jpg" alt="Photo of Banner Ad">
+
+
+
+<div ng-controller="CarouselDemoCtrl" id="slides_control">
+    <div>
+      <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <img ng-src="{{slide.image}}">
+          <div class="carousel-caption">
+            <h4>Slide {{$index+1}}</h4>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>

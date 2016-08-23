@@ -1,0 +1,96 @@
+
+ [
+
+{
+		"id" : "0001",
+		"firstname": "Model",
+		"lastname": "1",
+		"fullname": "Model 1",
+		"image" : "model1",
+		"dob" : "09/15/1985",
+		"team": "NA",
+		"position": "Goalkeeper",
+		"city": "Fresno",
+		"divpics":"hello world 1",
+		"paragraph1": "Jesse Zamudio Biography is here to stay, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought",
+		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought",
+		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought"
+
+	},
+	{
+		"id" : "0002",
+		"firstname": "Model",
+		"lastname": "2",
+		"fullname": "Model 2",
+		"image" : "model2",
+		"imagerotator" : "bannerad5",
+		"dob" : "11/07/1990",
+		"team": "NA",
+		"position": "Goalkeeper/Striker",
+		"city": "Fresno",
+		"divpics":"hello world 2",
+		"paragraph1": "Andres Zamudio was here, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
+	},
+	{
+		"id" : "0003",
+		"firstname": "Model",
+		"lastname": "3",
+		"fullname": "Model 3",
+		"image" : "model3",
+		"dob" : "NA",
+		"team": "NA",
+		"position": "Center-Back Defender",
+		"city": "Madera",
+		"divpics":"hello world 3",
+		"paragraph1": "Chato Ramos defiende al , Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
+	},
+	{
+		"id" : "0004",
+		"firstname": "Model",
+		"lastname": "4",
+		"fullname": "Model 4",
+		"image" : "model4",
+		"dob" : "NA",
+		"team": "NA",
+		"position": "NA",
+		"city": "Clovis",
+		"divpics":"hello world 4",
+		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
+	},
+	{
+		"id" : "0005",
+		"firstname": "Model",
+		"lastname": "5",
+		"fullname": "Model 5",
+		"image" : "model5",
+		"dob" : "NA",
+		"team": "NA",
+		"position": "NA",
+		"city": "Visalia",
+		"divpics":"hello world 5",
+		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
+	},
+	{
+		"id" : "0006",
+		"firstname": "Model",
+		"lastname": "6",
+		"fullname": "Model 6",
+		"image" : "model6",
+		"dob" : "NA",
+		"team": "NA",
+		"position": "NA",
+		"city": "Fresno",
+		"divpics":"hello world 6",
+		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
+		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
+	}
+]
