@@ -17,6 +17,18 @@ myApp.config(['$routeProvider', function($routeProvider) {
 		templateUrl: 'partials/about.html',
 		controller: 'AboutController'
 	}).
+	when('/advertiser', {
+		templateUrl: 'partials/advertiser.html',
+		controller: 'AdvertiserController'
+	}).
+	when('/products', {
+		templateUrl: 'partials/products.html',
+		controller: 'ProductsController'
+	}).
+	when('/contact', {
+		templateUrl: 'partials/contact.html',
+		controller: 'ContactController'
+	}).
 	otherwise({
 		redirectTo: '/list'
 	});

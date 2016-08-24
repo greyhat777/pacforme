@@ -29,10 +29,27 @@ modelsControllers.controller('DetailsController', ['$scope','$http','$routeParam
 }]);
 
 
+modelsControllers.controller('ProductsController', function($scope) {
+        $scope.message = 'Look! I am products page.';
+        $scope.title = 'products';
+    });
+
+
+modelsControllers.controller('AdvertiserController', function($scope) {
+        $scope.message = 'Look! I am advertiser page.';
+        $scope.title = 'advertiser';
+    });
+
+
 modelsControllers.controller('AboutController', function($scope) {
-        $scope.message = 'Look! I am an faqs page.';
-        $scope.title = 'FAQs';
-        $scope.pageClass = 'faqs';
+        $scope.message = 'Look! I am about page.';
+        $scope.title = 'about';
+    });
+
+
+modelsControllers.controller('ContactController', function($scope) {
+        $scope.message = 'Look! I am advertiser page.';
+        $scope.title = 'advertiser';
     });
 
 
