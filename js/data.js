@@ -3,9 +3,9 @@
 
 {
 		"id" : "0001",
-		"firstname": "Model",
-		"lastname": "1",
-		"fullname": "Model 1",
+		"firstname": "Rebecca",
+		"lastname": "Donaldson",
+		"fullname": "Model 1x5",
 		"image" : "model1",
 		"dob" : "09/15/1985",
 		"team": "NA",
@@ -19,8 +19,8 @@
 	},
 	{
 		"id" : "0002",
-		"firstname": "Model",
-		"lastname": "2",
+		"firstname": "Lisa",
+		"lastname": "Roberts",
 		"fullname": "Model 2",
 		"image" : "model2",
 		"imagerotator" : "bannerad5",

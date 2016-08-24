@@ -24,7 +24,7 @@
 
 	<ul class="athletelist">
 		<li class="athlete" ng-repeat="item in athletes | filter: query | orderBy: athleteOrder:direction " >
-			<a href="#/models/{{athletes.indexOf(item)}}">
+			<a ng-href="#/models/{{item.firstname + item.lastname}}">
 			<img id="imageproperties1" ng-src="images/{{item.image}}.jpg" alt="photo of {{item.name}}">
 			<div class ="info">
 				<h3 id="imageproperties1name">{{item.fullname}}</h3>

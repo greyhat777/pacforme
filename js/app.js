@@ -29,6 +29,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
 		templateUrl: 'partials/contact.html',
 		controller: 'ContactController'
 	}).
+	when('/home', {
+		templateUrl: 'partials/home.html',
+		controller: 'HomeController'
+	}).
 	otherwise({
 		redirectTo: '/list'
 	});
