@@ -6,7 +6,6 @@
 
 </div>
 
-
 <section class="athleteinfo1">
 	<div class="athlete" ng-model="athletes">
 	
@@ -44,19 +43,20 @@
 
 
 
-<img class="detailsimg bannerad" ng-src="images/{{currentItem.imagerotator}}.jpg" alt="Photo of Banner Ad">
 
 
 
-<div ng-controller="CarouselDemoCtrl" id="slides_control">
-    <div>
-      <carousel interval="myInterval">
-        <slide ng-repeat="slide in slides" active="slide.active">
-          <img ng-src="{{slide.image}}">
-          <div class="carousel-caption">
-            <h4>Slide {{$index+1}}</h4>
-          </div>
-        </slide>
-      </carousel>
+<div class="row" style="margin-left:325px;margin-top:70px;" ng-cloak ng-if="currentItem.imagerotator">
+        <div class="col-xs-4 right" id="slides_control">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" init-carousel>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" ng-class="{'active': $index == 0}"  ng-repeat="bannerimages in currentItem.imagerotator"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div ng-repeat="bannerimages in currentItem.imagerotator" ng-class="{'item active': $index == 0,'item':$index != 0}">
+                        <a ng-href="{{currentItem.linkimage[$index]}}"> <img ng-src="images/{{bannerimages}}.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
