@@ -45,7 +45,7 @@
 
 
 
-
+<div class="bannerad">
 <div class="row" style="margin-left:325px;margin-top:70px;" ng-cloak ng-if="currentItem.imagerotator">
         <div class="col-xs-4 right" id="slides_control">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" init-carousel>
@@ -54,9 +54,10 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div ng-repeat="bannerimages in currentItem.imagerotator" ng-class="{'item active': $index == 0,'item':$index != 0}">
-                        <a ng-href="{{currentItem.linkimage[$index]}}"> <img ng-src="images/{{bannerimages}}.jpg"></a>
+                        <a target="_blank" ng-href="{{currentItem.linkimage[$index]}}"> <img ng-src="images/{{bannerimages}}.jpg"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>    

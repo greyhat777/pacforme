@@ -58,6 +58,30 @@ modelsControllers.controller('AboutController', function ($scope) {
     $scope.pageClass = 'faqs';
 });
 
+modelsControllers.controller('ProductsController', function ($scope) {
+    $scope.message = 'Look! I am an products page.';
+    $scope.title = 'products';
+    $scope.pageClass = 'products';
+});
+
+modelsControllers.controller('AdvertiserController', function ($scope) {
+    $scope.message = 'Look! I am an advertiser page.';
+    $scope.title = 'Advertiser';
+    $scope.pageClass = 'advertiser';
+});
+
+modelsControllers.controller('ContactController', function ($scope) {
+    $scope.message = 'Look! I am an Contactpage.';
+    $scope.title = 'Contact';
+    $scope.pageClass = 'Contact';
+});
+
+modelsControllers.controller('HomeController', function ($scope) {
+    $scope.message = 'Look! I am the Home Page.';
+    $scope.title = 'Home';
+    $scope.pageClass = 'Home';
+});
+
 
 
 
