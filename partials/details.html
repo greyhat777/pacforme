@@ -3,15 +3,15 @@
 <div id="other">
 	<img id="redx" style="float:right" src="images/redx.png"/>
 	<img id="pic1" ng-src="images/{{currentItem.image}}.jpg" alt="Photo of {{currentItem.name}}">
+	<br/><br/>
+	{{currentItem.fullname}}
 
 </div>
 
 <section class="athleteinfo1">
 	<div class="athlete" ng-model="athletes">
-	
-		<a href="#/models/{{nextModelName}}"><button type="button" class="btn btn-primary middle">Next ></button></a>
-	    <a href="#/models/{{previousModelName}}"><button type="button" class="btn btn-primary midle">Previous <</button></a>
-
+	    <a href="#/models/{{previousModelName}}"><button type="button" class="btn btn-primary midle">< Previous </button></a>
+	    <a href="#/models/{{nextModelName}}"><button type="button" class="btn btn-primary middle">Next ></button></a>
 		<h1>{{currentItem.name}}</h1>
 		<div class="info">
 			<h3>{{currentItem.fullname}}</h3>
