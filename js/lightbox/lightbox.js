@@ -33,7 +33,7 @@
         // maxWidth: 800,
         // maxHeight: 600,
         positionFromTop: 50,
-        resizeDuration: 700,
+        resizeDuration: 100,
         showImageNumberLabel: true,
         wrapAround: false,
         disableScrolling: false,
@@ -61,6 +61,10 @@
         $('body').on('click', 'a[rel^=lightbox], area[rel^=lightbox], a[data-lightbox], area[data-lightbox]', function (event) {
             self.start($(event.currentTarget));
             return false;
+        });
+
+        $(window).resize(function () {
+            self.changeImage(self.currentImageIndex);
         });
     };
 
@@ -230,259 +234,263 @@
                 // Fit image inside the viewport.
                 // Take into account the border around the image and an additional 10px gutter on each side.
                 if (self.options.setHeight || self.options.setWidth) {
-                    windowWidth = self.options.setWidth;
-                    windowHeight = self.options.setHeight;
-                }
-                else {
-                    windowWidth = $(window).width();
-                    windowHeight = $(window).height();
-                }
-                maxImageWidth = windowWidth - self.containerLeftPadding - self.containerRightPadding - 20;
-                maxImageHeight = windowHeight - self.containerTopPadding - self.containerBottomPadding - 120;
-
-                // Check if image size is larger then maxWidth|maxHeight in settings
-                if (self.options.maxWidth && self.options.maxWidth < maxImageWidth) {
-                    maxImageWidth = self.options.maxWidth;
-                }
-                if (self.options.maxHeight && self.options.maxHeight < maxImageWidth) {
-                    maxImageHeight = self.options.maxHeight;
-                }
-
-                // Check if image size is smallet then minWidth|minHeight in settings
-                if (self.options.minWidth && self.options.minWidth > maxImageWidth) {
-                    maxImageWidth = self.options.minWidth;
-                }
-                if (self.options.minHeight && self.options.minHeight > maxImageWidth) {
-                    maxImageHeight = self.options.minHeight;
-                }
-
-                // Set image size from settings
-                //if (self.options.setWidth) {
-                //    ImageWidth = self.options.setWidth;
-                //}
-                //if (self.options.setHeight) {
-                //    ImageHeight = self.options.setHeight;
-                //}
-
-                // Is there a fitting issue?
-                //if ((preloader.width > maxImageWidth) || (preloader.height > maxImageHeight)) {
-                //  if ((preloader.width / maxImageWidth) > (preloader.height / maxImageHeight)) {
-                //    imageWidth  = maxImageWidth;
-                //    imageHeight = parseInt(preloader.height / (preloader.width / imageWidth), 10);
-                //    $image.width(imageWidth);
-                //    $image.height(imageHeight);
-                //  } else {
-                //    imageHeight = maxImageHeight;
-                //    imageWidth = parseInt(preloader.width / (preloader.height / imageHeight), 10);
-                //    $image.width(imageWidth);
-                //    $image.height(imageHeight);
-                //  }
-                //}
+                  
+                    windowWidth = parseInt(($(window).width() * self.options.setWidth)/100);
+                    windowHeight = parseInt(($(window).height() * self.options.setHeight) / 100);
+                
+                
             }
-            imageHeight = maxImageHeight;
-            imageWidth = maxImageWidth
-            $image.width(imageWidth);
-            $image.height(imageHeight);
-            self.sizeContainer($image.width(), $image.height());
+            else {
+                windowWidth = $(window).width();
+                windowHeight = $(window).height();
+            }
+            maxImageWidth = windowWidth - self.containerLeftPadding - self.containerRightPadding - 20;
+            maxImageHeight = windowHeight - self.containerTopPadding - self.containerBottomPadding - 120;
 
-            
-        };
+            // Check if image size is larger then maxWidth|maxHeight in settings
+            if (self.options.maxWidth && self.options.maxWidth < maxImageWidth) {
+                maxImageWidth = self.options.maxWidth;
+            }
+            if (self.options.maxHeight && self.options.maxHeight < maxImageWidth) {
+                maxImageHeight = self.options.maxHeight;
+            }
+
+            // Check if image size is smallet then minWidth|minHeight in settings
+            if (self.options.minWidth && self.options.minWidth > maxImageWidth) {
+                maxImageWidth = self.options.minWidth;
+            }
+            if (self.options.minHeight && self.options.minHeight > maxImageWidth) {
+                maxImageHeight = self.options.minHeight;
+            }
+
+            // Set image size from settings
+            //if (self.options.setWidth) {
+            //    ImageWidth = self.options.setWidth;
+            //}
+            //if (self.options.setHeight) {
+            //    ImageHeight = self.options.setHeight;
+            //}
+
+            // Is there a fitting issue?
+            //if ((preloader.width > maxImageWidth) || (preloader.height > maxImageHeight)) {
+            //  if ((preloader.width / maxImageWidth) > (preloader.height / maxImageHeight)) {
+            //    imageWidth  = maxImageWidth;
+            //    imageHeight = parseInt(preloader.height / (preloader.width / imageWidth), 10);
+            //    $image.width(imageWidth);
+            //    $image.height(imageHeight);
+            //  } else {
+            //    imageHeight = maxImageHeight;
+            //    imageWidth = parseInt(preloader.width / (preloader.height / imageHeight), 10);
+            //    $image.width(imageWidth);
+            //    $image.height(imageHeight);
+            //  }
+            //}
+        }
+        imageHeight = maxImageHeight;
+        imageWidth = maxImageWidth
+        $image.width(imageWidth);
+        $image.height(imageHeight);
+        self.sizeContainer($image.width(), $image.height());      
+    };
+    
+    preloader.src = this.album[imageNumber].link;
+    this.currentImageIndex = imageNumber;
+    
+};
+
+// Stretch overlay to fit the viewport
+Lightbox.prototype.sizeOverlay = function () {
+    this.$overlay
+      .width($(document).width())
+      .height($(document).height());
+};
+
+// Animate the size of the lightbox to fit the image we are showing
+Lightbox.prototype.sizeContainer = function (imageWidth, imageHeight) {
+    var self = this;
+
+    var oldWidth = this.$outerContainer.outerWidth();
+    var oldHeight = this.$outerContainer.outerHeight();
+    var newWidth = imageWidth + this.containerLeftPadding + this.containerRightPadding;
+    var newHeight = imageHeight + this.containerTopPadding + this.containerBottomPadding;
+
+    function postResize() {
+        self.$lightbox.find('.lb-dataContainer').width(newWidth);
+        self.$lightbox.find('.lb-prevLink').height(newHeight);
+        self.$lightbox.find('.lb-nextLink').height(newHeight);
+        self.showImage();
         if (self.options.thumbnails) {
-            self.addthumbnail(imageNumber);
+            self.addthumbnail(self.currentImageIndex);
         }
-        preloader.src = this.album[imageNumber].link;
-        this.currentImageIndex = imageNumber;
-    };
+    }
 
-    // Stretch overlay to fit the viewport
-    Lightbox.prototype.sizeOverlay = function () {
-        this.$overlay
-          .width($(document).width())
-          .height($(document).height());
-    };
-
-    // Animate the size of the lightbox to fit the image we are showing
-    Lightbox.prototype.sizeContainer = function (imageWidth, imageHeight) {
-        var self = this;
-
-        var oldWidth = this.$outerContainer.outerWidth();
-        var oldHeight = this.$outerContainer.outerHeight();
-        var newWidth = imageWidth + this.containerLeftPadding + this.containerRightPadding;
-        var newHeight = imageHeight + this.containerTopPadding + this.containerBottomPadding;
-
-        function postResize() {
-            self.$lightbox.find('.lb-dataContainer').width(newWidth);
-            self.$lightbox.find('.lb-prevLink').height(newHeight);
-            self.$lightbox.find('.lb-nextLink').height(newHeight);
-            self.showImage();
-        }
-
-        if (oldWidth !== newWidth || oldHeight !== newHeight) {
-            this.$outerContainer.animate({
-                width: newWidth,
-                height: newHeight
-            }, this.options.resizeDuration, 'swing', function () {
-                postResize();
-            });
-        } else {
+    if (oldWidth !== newWidth || oldHeight !== newHeight) {
+        this.$outerContainer.animate({
+            width: newWidth,
+            height: newHeight
+        }, this.options.resizeDuration, 'swing', function () {
             postResize();
-        }
-    };
+        });
+    } else {
+        postResize();
+    }
+};
 
-    // Display the image and its details and begin preload neighboring images.
-    Lightbox.prototype.showImage = function () {
-        this.$lightbox.find('.lb-loader').stop(true).hide();
-        this.$lightbox.find('.lb-image').fadeIn('slow');
+// Display the image and its details and begin preload neighboring images.
+Lightbox.prototype.showImage = function () {
+    this.$lightbox.find('.lb-loader').stop(true).hide();
+    this.$lightbox.find('.lb-image').fadeIn('slow');
 
-        this.updateNav();
-        this.updateDetails();
-        this.preloadNeighboringImages();
-        this.enableKeyboardNav();
-    };
+    this.updateNav();
+    this.updateDetails();
+    this.preloadNeighboringImages();
+    this.enableKeyboardNav();
+};
 
-    // Display previous and next navigation if appropriate.
-    Lightbox.prototype.updateNav = function () {
-        // Check to see if the browser supports touch events. If so, we take the conservative approach
-        // and assume that mouse hover events are not supported and always show prev/next navigation
-        // arrows in image sets.
-        var alwaysShowNav = false;
-        try {
-            document.createEvent('TouchEvent');
-            alwaysShowNav = (this.options.alwaysShowNavOnTouchDevices) ? true : false;
-        } catch (e) { }
+// Display previous and next navigation if appropriate.
+Lightbox.prototype.updateNav = function () {
+    // Check to see if the browser supports touch events. If so, we take the conservative approach
+    // and assume that mouse hover events are not supported and always show prev/next navigation
+    // arrows in image sets.
+    var alwaysShowNav = false;
+    try {
+        document.createEvent('TouchEvent');
+        alwaysShowNav = (this.options.alwaysShowNavOnTouchDevices) ? true : false;
+    } catch (e) { }
 
-        this.$lightbox.find('.lb-nav').show();
+    this.$lightbox.find('.lb-nav').show();
 
-        if (this.album.length > 1) {
-            if (this.options.wrapAround) {
-                if (alwaysShowNav) {
-                    this.$lightbox.find('.lb-prev, .lb-next').css('opacity', '1');
-                }
-                this.$lightbox.find('.lb-prev, .lb-next').show();
-            } else {
-                if (this.currentImageIndex > 0) {
-                    this.$lightbox.find('.lb-prev').show();
-                    if (alwaysShowNav) {
-                        this.$lightbox.find('.lb-prev').css('opacity', '1');
-                    }
-                }
-                if (this.currentImageIndex < this.album.length - 1) {
-                    this.$lightbox.find('.lb-next').show();
-                    if (alwaysShowNav) {
-                        this.$lightbox.find('.lb-next').css('opacity', '1');
-                    }
-                }
+    if (this.album.length > 1) {
+        if (this.options.wrapAround) {
+            if (alwaysShowNav) {
+                this.$lightbox.find('.lb-prev, .lb-next').css('opacity', '1');
             }
-        }
-    };
-
-    // Display caption, image number, and closing button.
-    Lightbox.prototype.updateDetails = function () {
-        var self = this;
-
-        // Enable anchor clicks in the injected caption html.
-        // Thanks Nate Wright for the fix. @https://github.com/NateWr
-        if (typeof this.album[this.currentImageIndex].title !== 'undefined' &&
-          this.album[this.currentImageIndex].title !== '') {
-            this.$lightbox.find('.lb-caption')
-              .html(this.album[this.currentImageIndex].title)
-              .fadeIn('fast')
-              .find('a').on('click', function (event) {
-                  if ($(this).attr('target') !== undefined) {
-                      window.open($(this).attr('href'), $(this).attr('target'));
-                  } else {
-                      location.href = $(this).attr('href');
-                  }
-              });
-        }
-
-        if (this.album.length > 1 && this.options.showImageNumberLabel) {
-            var labelText = this.imageCountLabel(this.currentImageIndex + 1, this.album.length);
-            this.$lightbox.find('.lb-number').text(labelText).fadeIn('fast');
+            this.$lightbox.find('.lb-prev, .lb-next').show();
         } else {
-            this.$lightbox.find('.lb-number').hide();
-        }
-
-        this.$outerContainer.removeClass('animating');
-
-        this.$lightbox.find('.lb-dataContainer').fadeIn(this.options.resizeDuration, function () {
-            return self.sizeOverlay();
-        });
-    };
-
-    // Preload previous and next images in set.
-    Lightbox.prototype.preloadNeighboringImages = function () {
-        if (this.album.length > this.currentImageIndex + 1) {
-            var preloadNext = new Image();
-            preloadNext.src = this.album[this.currentImageIndex + 1].link;
-        }
-        if (this.currentImageIndex > 0) {
-            var preloadPrev = new Image();
-            preloadPrev.src = this.album[this.currentImageIndex - 1].link;
-        }
-    };
-
-    Lightbox.prototype.enableKeyboardNav = function () {
-        $(document).on('keyup.keyboard', $.proxy(this.keyboardAction, this));
-    };
-
-    Lightbox.prototype.disableKeyboardNav = function () {
-        $(document).off('.keyboard');
-    };
-
-    Lightbox.prototype.keyboardAction = function (event) {
-        var KEYCODE_ESC = 27;
-        var KEYCODE_LEFTARROW = 37;
-        var KEYCODE_RIGHTARROW = 39;
-
-        var keycode = event.keyCode;
-        var key = String.fromCharCode(keycode).toLowerCase();
-        if (keycode === KEYCODE_ESC || key.match(/x|o|c/)) {
-            this.end();
-        } else if (key === 'p' || keycode === KEYCODE_LEFTARROW) {
-            if (this.currentImageIndex !== 0) {
-                this.changeImage(this.currentImageIndex - 1);
-            } else if (this.options.wrapAround && this.album.length > 1) {
-                this.changeImage(this.album.length - 1);
+            if (this.currentImageIndex > 0) {
+                this.$lightbox.find('.lb-prev').show();
+                if (alwaysShowNav) {
+                    this.$lightbox.find('.lb-prev').css('opacity', '1');
+                }
             }
-        } else if (key === 'n' || keycode === KEYCODE_RIGHTARROW) {
-            if (this.currentImageIndex !== this.album.length - 1) {
-                this.changeImage(this.currentImageIndex + 1);
-            } else if (this.options.wrapAround && this.album.length > 1) {
-                this.changeImage(0);
+            if (this.currentImageIndex < this.album.length - 1) {
+                this.$lightbox.find('.lb-next').show();
+                if (alwaysShowNav) {
+                    this.$lightbox.find('.lb-next').css('opacity', '1');
+                }
             }
         }
-    };
+    }
+};
 
-    // Adding thumbnail underneath the main image
-    Lightbox.prototype.addthumbnail = function (imagenum) {
-        var self = this;
-        $('.lb-container').css('position', 'relative');
-        $('.lb-container img').each(function (index, element) {
-            if (!$(element).hasClass('lb-image'))
-            {
-                $(element).remove();
-            }           
-        });
-        var leftpos = 70 + "px";
+// Display caption, image number, and closing button.
+Lightbox.prototype.updateDetails = function () {
+    var self = this;
+
+    // Enable anchor clicks in the injected caption html.
+    // Thanks Nate Wright for the fix. @https://github.com/NateWr
+    if (typeof this.album[this.currentImageIndex].title !== 'undefined' &&
+      this.album[this.currentImageIndex].title !== '') {
+        this.$lightbox.find('.lb-caption')
+          .html(this.album[this.currentImageIndex].title)
+          .fadeIn('fast')
+          .find('a').on('click', function (event) {
+              if ($(this).attr('target') !== undefined) {
+                  window.open($(this).attr('href'), $(this).attr('target'));
+              } else {
+                  location.href = $(this).attr('href');
+              }
+          });
+    }
+
+    if (this.album.length > 1 && this.options.showImageNumberLabel) {
+        var labelText = this.imageCountLabel(this.currentImageIndex + 1, this.album.length);
+        this.$lightbox.find('.lb-number').text(labelText).fadeIn('fast');
+    } else {
+        this.$lightbox.find('.lb-number').hide();
+    }
+
+    this.$outerContainer.removeClass('animating');
+
+    this.$lightbox.find('.lb-dataContainer').fadeIn(this.options.resizeDuration, function () {
+        return self.sizeOverlay();
+    });
+};
+
+// Preload previous and next images in set.
+Lightbox.prototype.preloadNeighboringImages = function () {
+    if (this.album.length > this.currentImageIndex + 1) {
+        var preloadNext = new Image();
+        preloadNext.src = this.album[this.currentImageIndex + 1].link;
+    }
+    if (this.currentImageIndex > 0) {
+        var preloadPrev = new Image();
+        preloadPrev.src = this.album[this.currentImageIndex - 1].link;
+    }
+};
+
+Lightbox.prototype.enableKeyboardNav = function () {
+    $(document).on('keyup.keyboard', $.proxy(this.keyboardAction, this));
+};
+
+Lightbox.prototype.disableKeyboardNav = function () {
+    $(document).off('.keyboard');
+};
+
+Lightbox.prototype.keyboardAction = function (event) {
+    var KEYCODE_ESC = 27;
+    var KEYCODE_LEFTARROW = 37;
+    var KEYCODE_RIGHTARROW = 39;
+
+    var keycode = event.keyCode;
+    var key = String.fromCharCode(keycode).toLowerCase();
+    if (keycode === KEYCODE_ESC || key.match(/x|o|c/)) {
+        this.end();
+    } else if (key === 'p' || keycode === KEYCODE_LEFTARROW) {
+        if (this.currentImageIndex !== 0) {
+            this.changeImage(this.currentImageIndex - 1);
+        } else if (this.options.wrapAround && this.album.length > 1) {
+            this.changeImage(this.album.length - 1);
+        }
+    } else if (key === 'n' || keycode === KEYCODE_RIGHTARROW) {
+        if (this.currentImageIndex !== this.album.length - 1) {
+            this.changeImage(this.currentImageIndex + 1);
+        } else if (this.options.wrapAround && this.album.length > 1) {
+            this.changeImage(0);
+        }
+    }
+};
+
+// Adding thumbnail underneath the main image
+Lightbox.prototype.addthumbnail = function (imagenum) {
+    var self = this;
+    $('.lb-container').css('position', 'relative');
+    $('.lb-container img').each(function (index, element) {
+        if (!$(element).hasClass('lb-image'))
+        {
+            $(element).remove();
+        }           
+    });
+
+    if ($(window).width() <= 675) {
+        var bottom = -40 + "px";
         $('*[data-lbthumbnail="true"] > img').each(function (index, element) {
-           
+
 
             $(element).css({
                 'position': 'absolute',
                 'width': '160px',
-                'left': leftpos,
-                'bottom': '-9%',
+                'left': '30%',
+                'bottom': bottom,
                 'height': '100px',
                 'border': '5px solid white',
                 'cursor': 'pointer',
                 'z-index': '50000'
             });
-            if (imagenum == index)
-            {
+            if (imagenum == index) {
                 $(element).css({
                     'border': '5px solid green',
-                    'cursor':'default'
+                    'cursor': 'default'
                 });
                 $(element).removeClass("imghover").addClass("noimghover");
             }
@@ -498,22 +506,63 @@
             });
 
             $('.lb-container').append(imgelem);
+            bottom = -((110 + 10) * (index + 1)) - 70 + "px";
+        });
+    }
+    else {
+        var leftpos = 70 + "px";
+        $('*[data-lbthumbnail="true"] > img').each(function (index, element) {
+
+
+            $(element).css({
+                'position': 'absolute',
+                'width': '160px',
+                'left': leftpos,
+                'bottom': '-9%',
+                'height': '100px',
+                'border': '5px solid white',
+                'cursor': 'pointer',
+                'z-index': '50000'
+            });
+            if (imagenum == index) {
+                $(element).css({
+                    'border': '5px solid green',
+                    'cursor': 'default'
+                });
+                $(element).removeClass("imghover").addClass("noimghover");
+            }
+            else {
+                $(element).addClass("imghover").removeClass("noimghover");
+            }
+            var imgelem = $(element).clone();
+
+            $(imgelem).unbind("click");
+
+            $(imgelem).bind("click", function () {
+                self.changeImage($(this).data('index'));
+            });
+
+            $('.lb-container').append(imgelem);
+            if ($('.lb-container').offset().left + $('.lb-container').width() <= $(imgelem).offset().left + $(imgelem).width()) {
+                $(imgelem).css('display', 'none');
+            }
             leftpos = ((170 + 25) * (index + 1)) + 70 + "px";
         });
     }
-    // Closing time. :-(
-    Lightbox.prototype.end = function () {
-        this.disableKeyboardNav();
-        $(window).off('resize', this.sizeOverlay);
-        this.$lightbox.fadeOut(this.options.fadeDuration);
-        this.$overlay.fadeOut(this.options.fadeDuration);
-        $('select, object, embed').css({
-            visibility: 'visible'
-        });
-        if (this.options.disableScrolling) {
-            $('body').removeClass('lb-disable-scrolling');
-        }
-    };
+}
+// Closing time. :-(
+Lightbox.prototype.end = function () {
+    this.disableKeyboardNav();
+    $(window).off('resize', this.sizeOverlay);
+    this.$lightbox.fadeOut(this.options.fadeDuration);
+    this.$overlay.fadeOut(this.options.fadeDuration);
+    $('select, object, embed').css({
+        visibility: 'visible'
+    });
+    if (this.options.disableScrolling) {
+        $('body').removeClass('lb-disable-scrolling');
+    }
+};
 
-    return new Lightbox();
+return new Lightbox();
 }));
