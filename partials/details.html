@@ -15,7 +15,12 @@
 		<h1>{{currentItem.name}}</h1>
 		<div class="info">
 			<h3>{{currentItem.fullname}}</h3>
-			<img id="pic1"  class="detailsimg" ng-src="images/{{currentItem.image}}.jpg" alt="Photo of {{currentItem.name}}">
+            <div custom-lightbox>
+                <a ng-href="images/models/{{currentItem.firstname + currentItem.lastname}}/{{thumnailimg}}.jpg" data-lightbox="{{currentItem.image}}" ng-repeat="thumnailimg in currentItem.thumbnail"><img ng-src="images/models/{{currentItem.firstname + currentItem.lastname}}/{{thumnailimg}}.jpg" ng-class="{ 'elementshow' : thumnailimg == currentItem.image,'elementhide' : thumnailimg != currentItem.image }" alt="Photo of {{currentItem.name}}" class="detailsimg"></a>
+            </div>
+            <div ng-if="currentItem.showthumbnail" style="display:none" data-lbthumbnail="true">
+                <img data-index="{{$index}}" ng-repeat="thumnailimg in currentItem.thumbnail" ng-src="images/models/{{currentItem.firstname + currentItem.lastname}}/{{thumnailimg}}.jpg" alt="Thumnail of model not loaded">
+            </div>
 			<h3>Stats:</h3>
 			  			<div class="team">City: &nbsp;..... {{currentItem.city}}</div>
 			  			<div class="team">Full Name: &nbsp;.....  {{currentItem.fullname}}</div>
