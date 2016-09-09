@@ -19,8 +19,8 @@ modelsControllers.directive('customLightbox', function () {
             lightbox.option({
                 'resizeDuration': 200,
                 'wrapAround': true,
-                'setHeight': '90',  //Values in percent
-                'setWidth': '70',
+                'setHeight': '100',  //Values in percent
+                'setWidth': 'auto',
                 'fitImagesInViewport': true,
                 'thumbnails':true
             });
