@@ -1,0 +1,68 @@
+
+
+<div id="other">
+	<img id="redx" style="float:right" src="images/redx.png"/>
+	<img id="pic1" ng-src="images/{{currentItem.image}}.jpg" alt="Photo of {{currentItem.name}}">
+	<br/><br/>
+	{{currentItem.fullname}}
+
+</div>
+
+<section class="athleteinfo1">
+	<div class="athlete" ng-model="athletes">
+	    <a href="#/models/{{previousModelName}}"><button type="button" class="btn btn-primary midle">< Previous </button></a>
+	    <a href="#/models/{{nextModelName}}"><button type="button" class="btn btn-primary middle">Next ></button></a>
+		<h1>{{currentItem.name}}</h1>
+		<div class="info">
+			<h3>{{currentItem.fullname}}</h3>
+            <div custom-lightbox>
+                <a ng-href="images/models/{{currentItem.firstname + currentItem.lastname}}/{{thumnailimg}}.jpg" data-lightbox="{{currentItem.image}}" ng-repeat="thumnailimg in currentItem.thumbnail"><img ng-src="images/models/{{currentItem.firstname + currentItem.lastname}}/{{thumnailimg}}.jpg" ng-class="{ 'elementshow' : thumnailimg == currentItem.image,'elementhide' : thumnailimg != currentItem.image }" alt="Photo of {{currentItem.name}}" class="detailsimg"></a>
+            </div>
+            <div ng-if="currentItem.showthumbnail" style="display:none" data-lbthumbnail="true">
+                <img data-index="{{$index}}" ng-repeat="thumnailimg in currentItem.thumbnail" ng-src="images/models/{{currentItem.firstname + currentItem.lastname}}/{{thumnailimg}}.jpg" alt="Thumnail of model not loaded">
+            </div>
+			<h3>Stats:</h3>
+			  			<div class="team">City: &nbsp;..... {{currentItem.city}}</div>
+			  			<div class="team">Full Name: &nbsp;.....  {{currentItem.fullname}}</div>
+			  			<div class="team">DOB: &nbsp;.....  {{currentItem.dob}}</div>
+			  			<div class="team">Team Name: &nbsp;.....  {{currentItem.team}}</div>
+			  			<div class="team">Position: &nbsp;.....  {{currentItem.position}}</div>
+			  			<div class="team">Biography: &nbsp;.....  {{currentItem.biography}}</div>
+		</div>
+	</div>
+	<br/>
+	<a href="#/list"><button type="button" class="btn btn-primary middle">Back to search</button></a>
+	<br/>
+	<br/>
+	<br/>
+</section>
+
+
+<div class="athleteinfo2">
+	<h3>Biography</h3>
+	<div>{{currentItem.paragraph1}}</div>
+	<div>{{currentItem.paragraph2}}</div>
+	<div>{{currentItem.paragraph3}}</div>
+</div>
+
+
+
+
+
+
+<div class="bannerad">
+<div class="row" style="margin-left:325px;margin-top:70px;" ng-cloak ng-if="currentItem.imagerotator">
+        <div class="col-xs-4 right" id="slides_control">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" init-carousel>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" ng-class="{'active': $index == 0}"  ng-repeat="bannerimages in currentItem.imagerotator"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div ng-repeat="bannerimages in currentItem.imagerotator" ng-class="{'item active': $index == 0,'item':$index != 0}">
+                        <a target="_blank" ng-href="{{currentItem.linkimage[$index]}}"> <img ng-src="images/{{bannerimages}}.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
