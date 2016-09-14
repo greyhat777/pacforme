@@ -36,7 +36,14 @@ ul.athletelist{
  .main{
     position:relative;
     top:3em;
- }   
+ }
+
+ #imageproperties1name{
+    position:relative;
+    margin-left:25%;
+    top:-.8em;
+    font-size:small;
+}   
 
 
 .navbar-brand{
@@ -92,14 +99,12 @@ ul.athletelist{
     border-width:1px;
 }
 
-#imageproperties1name{
-	position:relative;
-	display: block;
-    margin: auto;
-    width: 50%;
-    margin-left:720px;
-    top:-200px;
-}
+
+.navbar-brand{
+        position:relative;
+        display:none;
+    } 
+
 
 
 img.bannerad{
@@ -235,7 +240,29 @@ img.bannerad{
     .main{
         position:relative;
         top:0em;
+    }
+
+
+    #imageproperties1name{
+    position:relative;
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-left:720px;
+    top:-200px;
+    font-size:1.5em;
     }    
+
+
+    .navbar-brand-small{
+        position:relative;
+        display:none;
+    } 
+
+    .navbar-brand{
+        position:relative;
+        display:block;
+    }
 
 
 
