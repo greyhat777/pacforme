@@ -59,10 +59,19 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div ng-repeat="bannerimages in currentItem.imagerotator" ng-class="{'item active': $index == 0,'item':$index != 0}">
+                    <br/>	
                         <a target="_blank" ng-href="{{currentItem.linkimage[$index]}}"> <img ng-src="images/{{bannerimages}}.jpg"></a>
                     </div>
+                    <br/>
+                    <div><img width="150px" height="150px"  ng-src="images/{{currentItem.qrcode}}.jpg"></div> 
+
                 </div>
             </div>
         </div>
     </div>
-</div>    
+
+
+
+</div> 
+
+

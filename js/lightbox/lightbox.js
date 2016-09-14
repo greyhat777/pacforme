@@ -37,8 +37,8 @@
         showImageNumberLabel: true,
         wrapAround: false,
         disableScrolling: false,
-        minHeight: 400,
-        minWidth: 400
+        minHeight: 200,
+        minWidth: 200
     };
 
     Lightbox.prototype.option = function (options) {
@@ -64,6 +64,7 @@
         });
 
         $(window).resize(function () {
+            if ($('#lightboxOverlay').is(":visible"))
             self.changeImage(self.currentImageIndex);
         });
     };
@@ -235,8 +236,16 @@
                 // Take into account the border around the image and an additional 10px gutter on each side.
                 if (self.options.setHeight || self.options.setWidth) {
                   
-                    windowWidth = parseInt(($(window).width() * self.options.setWidth)/100);
-                    windowHeight = parseInt(($(window).height() * self.options.setHeight) / 100);
+                    windowWidth = parseInt(($(window).width() * self.options.setWidth) / 100);
+                    if ($(window).width() <= 706)
+                    {
+                        windowHeight = parseInt(($(window).height() * 40) / 100);
+                    }
+                    else
+                    {
+                        windowHeight = parseInt(($(window).height() * self.options.setHeight) / 100);
+                    }
+                   
                 
                 
             }
@@ -487,6 +496,11 @@ Lightbox.prototype.addthumbnail = function (imagenum) {
                 'cursor': 'pointer',
                 'z-index': '50000'
             });
+
+            if ($(window).width() <= 400)
+            {
+                $(element).css("left", "15%");
+            }
             if (imagenum == index) {
                 $(element).css({
                     'border': '5px solid green',

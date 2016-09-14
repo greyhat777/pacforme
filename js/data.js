@@ -16,6 +16,7 @@
 		"position": "Goalkeeper",
 		"city": "Fresno",
 		"divpics":"hello world 1",
+		"qrcode": "website-model1",
 		"paragraph1": "Jesse Zamudio Biography is here to stay, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought"
@@ -36,6 +37,7 @@
 		"position": "Goalkeeper/Striker",
 		"city": "Fresno",
 		"divpics":"hello world 2",
+		"qrcode": "website-model2",
 		"paragraph1": "Andres Zamudio was here, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -55,6 +57,7 @@
 		"position": "Center-Back Defender",
 		"city": "Madera",
 		"divpics":"hello world 3",
+		"qrcode": "website-model3",
 		"paragraph1": "Chato Ramos defiende al , Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -74,6 +77,7 @@
 		"position": "NA",
 		"city": "Clovis",
 		"divpics":"hello world 4",
+		"qrcode": "website-model4",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -93,6 +97,7 @@
 		"position": "NA",
 		"city": "Visalia",
 		"divpics":"hello world 5",
+		"qrcode": "website-model5",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -112,6 +117,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 6",
+		"qrcode": "website-model6",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -131,6 +137,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 7",
+		"qrcode": "website-model7",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -150,6 +157,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 8",
+		"qrcode": "website-model8",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -169,6 +177,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 9",
+		"qrcode": "website-model9",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -188,6 +197,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 10",
+		"qrcode": "website-model10",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -207,6 +217,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 11",
+		"qrcode": "website-model11",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -226,6 +237,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 12",
+		"qrcode": "website-model12",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -245,6 +257,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 13",
+		"qrcode": "website-model13",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -264,6 +277,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 14",
+		"qrcode": "website-model14",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -283,6 +297,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 15",
+		"qrcode": "website-model15",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -302,6 +317,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 16",
+		"qrcode": "website-model16",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -321,6 +337,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 17",
+		"qrcode": "website-model17",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -340,6 +357,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 18",
+		"qrcode": "website-model18",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -359,6 +377,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 19",
+		"qrcode": "website-model19",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -378,6 +397,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 20",
+		"qrcode": "website-model20",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
@@ -397,6 +417,7 @@
 		"position": "NA",
 		"city": "Fresno",
 		"divpics":"hello world 21",
+		"qrcode": "website-model21",
 		"paragraph1": "THis is a Test, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph2": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought.",
 		"paragraph3": "Lord Ipsum, Yo is a model from the country of Zimbabwe in Africa. asdkf laksjdfljasdkfl;j alksdjf alkjsdf  Lord Ipsum, imigrated to the Uto win the war tha alksdjf l asdfl asdlfka sdfkasdfj klasjdflkja sdkfja ksldjf akljsdfasdf asdfasdfasdf asdf sadf ajsdf lkajlksdf jalksjd ft is being fought."
